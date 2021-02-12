@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Spartan', sans-serif;
+    background: hsl(300, 24%, 96%);
+    font-size: 15px;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    align-items: center;
+    justify-items: center;
+}
+
+@media screen and (max-width:920px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+}
+
+.top-left,
+.top-right {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
+
+#star-report {
+    margin-left: 3rem;
+}
+
+#star-besttech {
+    margin-left: 6rem;
+}
+
+.top-left-big {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 3em;
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+.top-left-small {
+    width: 90%;
+    font-weight: 500;
+    color: hsl(336, 12%, 58%);
+}
+
+.top,
+.bottom {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:920px) {
+    .top,
+    .bottom {
+        width: 70%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.bottom {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.stars {
+    width: 500px;
+    height: 50px;
+    background-color: hsl(337, 79%, 94%);
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.checked {
+    color: orange;
+    margin-left: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 15px;
+    background: hsl(300, 43%, 22%);
+    color: white;
+    width: 30%;
+    height: 250px;
+    padding: 2rem;
+    box-shadow: 0px 0px 8px #888888;
+    font-size: small;
+    line-height: 1.5;
+}
+
+.card-top {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.reviewer-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.card-name {
+    font-weight: 700;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.card-verified {
+    color: hsl(333, 80%, 67%);
+}
+
+.bg-pattern-top-desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bg-pattern-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#card-two {
+    margin-top: 30px;
+}
+
+#card-three {
+    margin-top: 60px;
+}
