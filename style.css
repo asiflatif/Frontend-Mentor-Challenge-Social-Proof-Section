@@ -7,7 +7,7 @@
 body,
 html {
     font-family: 'Spartan', sans-serif;
-    background: hsl(300, 24%, 96%);
+    background: white;
     font-size: 15px;
     height: 100vh;
 }
@@ -94,7 +94,8 @@ html {
     border-radius: 15px;
     background: hsl(300, 43%, 22%);
     color: white;
-    width: 380px;
+    width: auto;
+    margin-left: 15px;
     height: 250px;
     padding: 2rem;
     box-shadow: 0px 0px 8px #888888;
@@ -198,7 +199,7 @@ html {
         font-size: 13px;
     }
     .card {
-        width: auto;
+        margin: 0;
     }
     #card-two {
         margin-top: 15px;
